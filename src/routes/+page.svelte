@@ -5,7 +5,7 @@
   <a href="/foodinfo">
     <button id="fdinfo">급식 정보</button>
     <img
-      src="http://hansu.ms.kr/object/lunch/images/sw13_lunch_imgBg.gif"
+      src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjhfMTQ2%2FMDAxNjUzNzExMjI0NDc3.5AcmpTKzGi5GcptgWkud6DiQbzmejHzQRPRuwn9Xqs4g.e0VsFy4XssQm8PYRt2r2ENfKf6Wb7T87fZkrLdNm5CYg.JPEG.food_jong%2FCK_ti195a12519.jpg&type=a340"
       alt="급식정보"
     />
   </a>
