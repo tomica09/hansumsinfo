@@ -30,9 +30,9 @@
 
 <style>
   .food {
-    display: inline;
+    display: flex;
   }
   .time{
-    display: inline;
+    display: flex;
   }
 </style>
