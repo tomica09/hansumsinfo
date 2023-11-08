@@ -28,10 +28,10 @@
 </body>
 
 <style>
-  .d {
+  .food {
     display: inline;
   }
-  .food {
-    display: inline-block;
+  .time{
+    display: inline;
   }
 </style>
