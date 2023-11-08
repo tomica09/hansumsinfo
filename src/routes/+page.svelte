@@ -4,7 +4,10 @@
 <body>
   <a href="/foodinfo">
     <button id="fdinfo">급식 정보</button>
-    <img src="/src/routes/foodinfo/sw13_lunch_imgBg.gif" alt="급식정보" />
+    <img
+      src="http://hansu.ms.kr/object/lunch/images/sw13_lunch_imgBg.gif"
+      alt="급식정보"
+    />
   </a>
   <a href="/timestamp">
     <button id="tsinfo">시간표 정보</button>
