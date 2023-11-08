@@ -8,7 +8,7 @@
   <a href="/timestamp">
     <button>시간표 정보</button>
   </a>
-  <a href="hansu.ms.kr">
+  <a href="http://hansu.ms.kr">
     <button>학교 홈페이지로</button>
   </a>
 </body>
