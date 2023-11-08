@@ -13,6 +13,7 @@
       alt="급식정보"
     />
     <a href="/timestamp">
+<br />
       <button class="time" id="tsinfo">시간표 정보</button>
     </a>
     <img
