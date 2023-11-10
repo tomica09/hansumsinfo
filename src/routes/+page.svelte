@@ -14,7 +14,7 @@
     />
     <a href="/timestamp">
 <br />
-      <button class="time" id="tsinfo">시간표 정  보임?</button>
+      <button class="time" id="tsinfo">시간표 정보임!</button>
     </a>
     <img
       class="time"
