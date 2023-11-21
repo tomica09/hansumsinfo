@@ -48,7 +48,7 @@
 <p>{INFOMSG}</p>
 {/if}
 
-<form>
+<form action="..">
 <input type="button" value="다음날">
 <input type="button" value="전날">
 </form>
