@@ -48,7 +48,7 @@
 <p>{INFOMSG}</p>
 {/if}
 
-<form action="..">
+<form action="+page.svelte">
 <input type="button" value="다음날">
 <input type="button" value="전날">
 </form>
