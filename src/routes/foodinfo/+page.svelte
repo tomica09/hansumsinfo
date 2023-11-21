@@ -48,6 +48,10 @@
 <p>{INFOMSG}</p>
 {/if}
 
+<form>
+<input type="button">
+</form>
+
 <a href="..">
   <button>메인 페이지로 돌아가기</button>
 </a>
