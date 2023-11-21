@@ -49,7 +49,8 @@
 {/if}
 
 <form>
-<input type="button">다음날로
+<input type="button" value="다음날">
+<input type="button" value="전날">
 </form>
 
 <a href="..">
