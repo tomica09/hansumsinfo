@@ -1,10 +1,10 @@
 <script>
 function previousday() {
-date.setDate(today.getDate() - 1);
+date.setDate(date.getDate() - 1);
 location.reload();
 }
 function nextday() {
-date.setDate(today.getDate() + 1);
+date.setDate(date.getDate() + 1);
 location.reload();
 }
   let date = new Date();
