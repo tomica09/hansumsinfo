@@ -48,10 +48,9 @@
 <p>{INFOMSG}</p>
 {/if}
 
-<form action="+page.svelte">
-<input type="button" value="다음날">
-<input type="button" value="전날">
-</form>
+<button>이전날로</button>
+<button>다음날로</button>
+
 
 <a href="..">
   <button>메인 페이지로 돌아가기</button>
