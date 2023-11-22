@@ -4,6 +4,7 @@
   console.log(`${now}에 새로 업데이트 되었습니다.`)
   var date;
 import { goto, invalidate } from '$app/navigation';
+import {day} from 'd.js';
 function reloadPage() {
         const thisPage = window.location.pathname;
 
@@ -25,7 +26,7 @@ reloadPage();
 var today = new Date();
 $: callFunc = fdinfo();
 const fdinfo = async () => {
-  date = new Date();
+  date = day
   let api_link =
     "https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7621035&key=052c429f8ab44a25b65f613ac02e8f90&type=json";
   let constant = "";
