@@ -40,8 +40,23 @@ const fdinfo = async () => {
     constant +
     String(date.getDate());
   let link = api_link + "&MLSV_YMD=" + today;
-  
-  dateinfo = today + date.getVarDate() + "의 급식정보 입니다.";
+  var dayy;
+  if(date.getDay() === 0){
+    dayy = "일요일"
+  }else if(date.getDay === 1){
+    dayy = "월요일"
+  }else if(date.getDay === 2){
+    dayy = "화요일"
+  }else if(date.getDay === 3){
+    dayy = "수요일"
+  }else if(date.getDay === 4){
+    dayy = "목요일"
+  }else if(date.getDay === 5){
+    dayy = "금요일"
+  }else if(date.getDay === 6){
+    dayy = "토요일"
+  }
+  dateinfo = today + dayy + "의 급식정보 입니다.";
   INFOMSG = "";
 
   // 함수
@@ -78,7 +93,7 @@ const fdinfo = async () => {
 {#if callFunc}
 <h1>{dateinfo}</h1>
 <p>{INFOMSG}</p>
-<a href="http://hansu.ms.kr/lunch.list">더 자세한 식단정보 확인하기</a>
+<a href="http://hansu.ms.kr/lunch.list">더 자세한 식단정보 확인하기</a><br/>
 {/if}
 
 <button on:click={gop}>이전날로</button>
