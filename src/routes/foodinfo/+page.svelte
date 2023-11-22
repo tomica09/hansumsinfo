@@ -42,7 +42,7 @@
     } else if (date.getDay() === 6) {
       dayy = "토요일";
     }
-    dateinfo = today + dayy + "의 급식정보 입니다.";
+    dateinfo = today + " " + dayy + "의 급식정보 입니다.";
 
     // api 호출
     const res = await fetch(link);
