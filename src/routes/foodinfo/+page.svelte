@@ -25,6 +25,7 @@ reloadPage();
 //////////급식 표시하는 거 함수로 만들기 -> 나중에 해야할 일
 var today = new Date();
 $: callFunc = fdinfo();
+console.log(day);
 const fdinfo = async () => {
   date = day
   let api_link =
