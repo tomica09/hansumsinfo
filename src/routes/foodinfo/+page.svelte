@@ -43,17 +43,17 @@ const fdinfo = async () => {
   var dayy;
   if(date.getDay() === 0){
     dayy = "일요일"
-  }else if(date.getDay === 1){
+  }else if(date.getDay() === 1){
     dayy = "월요일"
-  }else if(date.getDay === 2){
+  }else if(date.getDay() === 2){
     dayy = "화요일"
-  }else if(date.getDay === 3){
+  }else if(date.getDay() === 3){
     dayy = "수요일"
-  }else if(date.getDay === 4){
+  }else if(date.getDay() === 4){
     dayy = "목요일"
-  }else if(date.getDay === 5){
+  }else if(date.getDay() === 5){
     dayy = "금요일"
-  }else if(date.getDay === 6){
+  }else if(date.getDay() === 6){
     dayy = "토요일"
   }
   dateinfo = today + dayy + "의 급식정보 입니다.";
