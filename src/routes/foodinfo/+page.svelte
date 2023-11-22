@@ -1,4 +1,6 @@
+
 <script>
+import { goto, invalidate } from '$app/navigation';
 function reloadPage() {
         const thisPage = window.location.pathname;
 
