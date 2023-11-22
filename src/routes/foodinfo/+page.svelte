@@ -25,6 +25,8 @@ date.setDate(date.getDate() + 1);
 var date = new Date();
 $: callFunc = fdinfo();
 const fdinfo = async () => {
+  
+var ermsg = null;
   let api_link =
     "https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7621035&key=052c429f8ab44a25b65f613ac02e8f90&type=json";
   let constant = "";
@@ -55,7 +57,9 @@ const fdinfo = async () => {
 
     if (!foodinfo.mealServiceDietInfo) {
       INFOMSG = "오늘의 급식정보가 없습니다";
-      return INFOMSG;
+      ermsg = "더 자세한 식단정보 확인하기"
+      return INFOMSG , ermsg;
+    
     }
 
     INFOMSG = foodinfo.mealServiceDietInfo[1].row[0].DDISH_NM.replace(
@@ -80,6 +84,7 @@ const fdinfo = async () => {
 {#if callFunc}
 <h1>{dateinfo}</h1>
 <p>{INFOMSG}</p>
+<a href="http://hansu.ms.kr/lunch.list">{ermsg}</a>
 {/if}
 
 <button on:click={gop}>이전날로</button>
