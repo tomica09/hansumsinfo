@@ -1,11 +1,20 @@
 <script>
+function reloadPage() {
+        const thisPage = window.location.pathname;
+
+        console.log('goto ' + thisPage);
+
+        goto('/').then(
+            () => goto(thisPage)
+        );
+    }
 function previousday() {
 date.setDate(date.getDate() - 1);
-location.reload();
+reloadPage();
 }
 function nextday() {
 date.setDate(date.getDate() + 1);
-location.reload();
+reloadPage();
 }
   let date = new Date();
   let api_link =
