@@ -70,12 +70,12 @@ const fdinfo = async () => {
 {#if callFunc}
 <h1>{dateinfo}</h1>
 <p>{INFOMSG}</p>
+{/if}
 
 <button on:click={previousday}>이전날로</button>
 <button on:click={nextday}>다음날로</button>
 
 
-{/if}
 <a href="..">
   <button>메인 페이지로 돌아가기</button>
 </a>
