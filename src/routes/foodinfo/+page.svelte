@@ -18,6 +18,7 @@ function nextday() {
 date.setDate(date.getDate() + 1);
 reloadPage();
 }
+//////////급식 표시하는 거 함수로 만들기 -> 나중에 해야할 일
   let date = new Date();
   let api_link =
     "https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7621035&key=052c429f8ab44a25b65f613ac02e8f90&type=json";
