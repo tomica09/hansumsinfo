@@ -26,7 +26,6 @@ var date = new Date();
 $: callFunc = fdinfo();
 const fdinfo = async () => {
   
-var ermsg = "더 자세한 식단정보 확인하기";
   let api_link =
     "https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7621035&key=052c429f8ab44a25b65f613ac02e8f90&type=json";
   let constant = "";
@@ -58,7 +57,7 @@ var ermsg = "더 자세한 식단정보 확인하기";
     if (!foodinfo.mealServiceDietInfo) {
       INFOMSG = "오늘의 급식정보가 없습니다";
       
-      return INFOMSG , ermsg;
+      return INFOMSG;
     
     }
 
@@ -84,7 +83,7 @@ var ermsg = "더 자세한 식단정보 확인하기";
 {#if callFunc}
 <h1>{dateinfo}</h1>
 <p>{INFOMSG}</p>
-<a href="http://hansu.ms.kr/lunch.list">{ermsg}</a>
+<a href="http://hansu.ms.kr/lunch.list">더 자세한 식단정보 확인하기</a>
 {/if}
 
 <button on:click={gop}>이전날로</button>
