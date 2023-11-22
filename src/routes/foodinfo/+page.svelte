@@ -4,7 +4,8 @@
   console.log(`${now}에 새로 업데이트 되었습니다.`)
   var date;
 import { goto, invalidate } from '$app/navigation';
-import {day} from 'd.js';
+
+/*
 function reloadPage() {
         const thisPage = window.location.pathname;
 
@@ -14,6 +15,7 @@ function reloadPage() {
             () => goto(thisPage)
         );
     }
+    */
 function previousday() {
 date.setDate(date.getDate() - 1);
 reloadPage();
@@ -23,11 +25,9 @@ date.setDate(date.getDate() + 1);
 reloadPage();
 }
 //////////급식 표시하는 거 함수로 만들기 -> 나중에 해야할 일
-var today = new Date();
+var date = new Date();
 $: callFunc = fdinfo();
-console.log(day + "d");
 const fdinfo = async () => {
-  date = day
   let api_link =
     "https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7621035&key=052c429f8ab44a25b65f613ac02e8f90&type=json";
   let constant = "";
@@ -70,14 +70,23 @@ const fdinfo = async () => {
   };
   var dateinfo;
   var INFOMSG;
+
+  const gop = function () {
+    previousday();
+    fdinfo();
+  }
+  const gon = function () {
+    nextday();
+    fdinfo();
+  }
 </script>
 {#if callFunc}
 <h1>{dateinfo}</h1>
 <p>{INFOMSG}</p>
 {/if}
 
-<button on:click={previousday}>이전날로</button>
-<button on:click={nextday}>다음날로</button>
+<button on:click={gop}>이전날로</button>
+<button on:click={gon}>다음날로</button>
 
 
 <a href="..">
