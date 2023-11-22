@@ -1,5 +1,7 @@
 
 <script>
+  var now = new Date();
+  console.log(`${now}에 새로 업데이트 되었습니다.`)
   var date;
 import { goto, invalidate } from '$app/navigation';
 function reloadPage() {
