@@ -1,8 +1,6 @@
 
 <script>
-  var now = new Date();
   console.log(`${now}에 새로 업데이트 되었습니다.`)
-  var date;
 import { goto, invalidate } from '$app/navigation';
 
 /*
@@ -18,12 +16,11 @@ function reloadPage() {
     */
 function previousday() {
 date.setDate(date.getDate() - 1);
-reloadPage();
 }
 function nextday() {
 date.setDate(date.getDate() + 1);
-reloadPage();
 }
+
 //////////급식 표시하는 거 함수로 만들기 -> 나중에 해야할 일
 var date = new Date();
 $: callFunc = fdinfo();
