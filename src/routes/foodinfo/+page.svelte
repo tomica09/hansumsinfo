@@ -23,7 +23,7 @@ constant2 = "0";
 }
     // 날짜 설정
     let today =
-      String(date.getFullYear()) + constant2
+      String(date.getFullYear()) + constant2 +
       String(date.getMonth() + 1) +
       constant +
       String(date.getDate());
